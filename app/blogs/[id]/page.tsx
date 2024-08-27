@@ -1,15 +1,15 @@
-import blogs from "@/app/data/blog";
+import blogs from "@/app/data/blogs";
 
 export const generateStaticParams = () => {
   return blogs.map((blog) => ({
-    id: blog.id,
+    id: blog.id.toString(),
   }));
 };
 
 export default function SingleBlog({ params }: { params: { id: string } }) {
   const { id } = params;
 
-  const blog = blogs.find((blog) => blog.id === id);
+  const blog = blogs.find((blog) => blog.id.toString() === id);
 
   return (
     <div>

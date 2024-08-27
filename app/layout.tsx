@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <ul className=" flex gap-5 bg-black text-white p-5">
+        <ul className=" flex gap-5 bg-black text-white p-5">
           <li>
             <CustomLink path="/">Home</CustomLink>
           </li>
@@ -34,7 +34,7 @@ export default function RootLayout({
           <li>
             <CustomLink path="/blogs">Blogs</CustomLink>
           </li>
-        </ul> */}
+        </ul>
         <Header />
         {children}
         <Footer />
